@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk 2077 - Eldritch Nexus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white font-sans mx-auto text-center">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-purple-900 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="..\index.html" class="text-3xl font-bold hover:text-red-600">Eldritch Nexus</a>
+            
+            <!-- Large Screen Navigation -->
+            <ul class="hidden space-x-6 lg:flex" id="bignav">
+                <li><a href="..\index.html#Games" class="text-lg font-bold hover:text-red-600">Featured Games</a></li>
+                    <li><a href="..\deal.html" class="text-lg font-bold hover:text-red-600">Deal with the Devil</a></li>
+                    <li><a href="..\index.html#" class="text-lg font-bold hover:text-red-600">Game Library</a></li>
+            </ul>
+            
+            <div class="relative inline-block text-left lg:hidden">
+                <button type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-purple-900 px-3 py-2 font-semibold text-white shadow-sm text-3xl hover:text-red-600" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                    ☰
+                    <!--<svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                    </svg>-->
+                </button>
+
+                <!-- Dropdown menu, show/hide based on menu state -->
+                <div class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1" style="display: none;">
+                    <a href="..\index.html#Games" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Featured Games</a>
+                    <a href="..\deal.html" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Deal with the Devil</a>
+                    <a href="..\index.html#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Game Library</a>
+                    <a href="..\sign_in_page.html" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Sign In</a>
+                </div>
+            </div>
+            
+            <div class="hidden flex items-center lg:flex" id="bignav">
+                <a href="..\sign_in_page.html" class="mr-4 text-lg font-bold hover:text-red-600">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        const menuButton = document.getElementById("menu-button");
+        const dropdownMenu = document.querySelector('.absolute.right-0');
+
+        menuButton.addEventListener('click', () => {
+            dropdownMenu.style.display = dropdownMenu.style.display === 'none' ? 'block' : 'none';
+        });
+    </script>
+
+    <section class="bg-gray-800 p-4 items-center mx-auto">
+        <div class="container mx-auto flex flex-col md:flex-row items-center"> <!-- Added 'items-center' class -->
+            <div class="w-1/2 sm:w-1/4 md:w-1/2 lg:w-1/2"></div> <!-- Blank space on the left, stack on small to large screens -->
+            <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 p-4">
+                <img src="..\images\Cyberpunk2077\banner.jpg" class="w-full rounded-lg shadow-lg">
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 p-4 md:pl-4">
+                <h1 class="text-3xl font-semibold mb-2 max-w-lg">Cyberpunk 2077</h1>
+                <p class="text-gray-300 max-w-lg">CD Projekt Red</p>
+                <p class="mt-4 text-gray-300 max-w-lg">Cyberpunk 2077 is an open-world, action-adventure RPG set in the dark future of Night City — a dangerous megalopolis obsessed with power, glamor, and ceaseless body modification.</p>
+            </div>
+            <div class="w-1/2 sm:w-1/4 md:w-1/2 lg:w-1/2"></div> <!-- Blank space on the right, stack on small to large screens -->
+        </div>
+    </section>
+    
+    
+    
+    <div class="flex flex-col sm:flex-row sm:space-x-0 md:space-x-0 p-4">
+        <div class="w-1/2 sm:w-1/4 md:w-1/2 lg:w-1/2"></div> <!-- Blank space on the left, stack on small to large screens -->
+        <div class="w-full flex justify-center items-center">
+            <div class="mx-auto">
+                <img class="mySlides fade w-full rounded-lg shadow-lg " src="..\images\Cyberpunk2077\slide1.jpg">
+                <img class="mySlides fade w-full rounded-lg shadow-lg " src="..\images\Cyberpunk2077\slide2.jpg">
+                <img class="mySlides fade w-full rounded-lg shadow-lg " src="..\images\Cyberpunk2077\slide3.jpg">
+                <img class="mySlides fade w-full rounded-lg shadow-lg " src="..\images\Cyberpunk2077\slide4.jpg">
+                <img class="mySlides fade w-full rounded-lg shadow-lg " src="..\images\Cyberpunk2077\slide5.jpg">
+                <img class="mySlides fade w-full rounded-lg shadow-lg " src="..\images\Cyberpunk2077\slide6.jpg">
+                <img class="mySlides fade w-full rounded-lg shadow-lg " src="..\images\Cyberpunk2077\slide7.jpg">
+            </div>
+        </div>
+        <div class="w-1/2 sm:w-1/4 md:w-1/2 lg:w-1/2"></div> <!-- Blank space on the right, stack on small to large screens -->
+    </div>
+
+
+    <script src="..\javascript\slideshow.js"></script>
+
+    <div class="bg-gray-800">
+        <div class="max-w-5xl mx-auto">
+            <p class="text-gray-300">
+                Cyberpunk 2077 is an open-world, action-adventure RPG set in the megalopolis of Night City, where you play as a cyberpunk mercenary wrapped up in a do-or-die fight for survival. Improved and featuring all-new free additional content, customize your character and playstyle as you take on jobs, build a reputation, and unlock upgrades. The relationships you forge and the choices you make will shape the story and the world around you. Legends are made here. What will yours be?
+            </p>
+            <img src="..\images\Cyberpunk2077\content1.jpg" class="w-auto h-64 lg:h-72 mx-auto p-4 rounded-lg shadow-lg">
+        
+            <p class="text-gray-300">DISCOVER UPDATE 2.0:
+                Experience new and overhauled gameplay mechanics to fulfill your wildest cyberpunk fantasies. The free Update 2.0 brings brand new ways to play Cyberpunk 2077, including totally redesigned perks and cyberware systems, pulsating vehicle combat and car chases, a revamped police system, enhanced enemy combat AI, and more.
+            </p>
+            <img src="..\images\Cyberpunk2077\content2.png" class="w-auto h-64 lg:h-72 mx-auto p-4 rounded-lg shadow-lg"> 
+                
+            
+            <p class="text-gray-300"></p>CREATE YOUR OWN CYBERPUNK:
+                Become an urban outlaw equipped with cybernetic enhancements and build your legend on the streets of Night City.
+            </p>
+            <img src="..\images\Cyberpunk2077\content3.png" class="w-auto h-64 lg:h-72 mx-auto p-4 rounded-lg shadow-lg">
+            
+            <p class="text-gray-300"></p>EXPLORE THE CITY OF THE FUTURE:
+                Night City is packed to the brim with things to do, places to see, and people to meet. And it’s up to you where to go, when to go, and how to get there.
+            </p>
+            <img src="..\images\Cyberpunk2077\content4.png" class="w-auto h-64 lg:h-72 mx-auto p-4 rounded-lg shadow-lg">
+            
+            <p class="text-gray-300"></p>BUILD YOUR LEGEND:
+                Go on daring adventures and build relationships with unforgettable characters whose fates are shaped by the choices you make.
+            </p>
+            <img src="..\images\Cyberpunk2077\content5.png" class="w-auto h-64 lg:h-72 mx-auto p-4 rounded-lg shadow-lg">   
+                
+            
+            <p class="text-gray-300"></p>EQUIPPED WITH IMPROVEMENTS:
+                Experience Cyberpunk 2077 with a host of changes and improvements to gameplay and economy, the city, map usage, and more.
+            </p>
+        </div>
+    </div>
+
+    <section class="bg-gray-900 py-4">
+        <div class="max-w-5xl mx-auto text-center text-black">
+            <p class="text-2xl text-purple-700 mb-4">Buy Cyberpunk 2077</p>
+            <p class="mb-6 text-white text-2xl">£49.99</p>
+            <form action="#" method="POST">
+                <!-- Include your form fields here, e.g., name, email, etc. -->
+                <div class="mb-4">
+                    <label for="email" class="block text-purple-700 text-2xl">Email:</label>
+                    <input type="email" id="email" name="email" class="rounded-lg px-3 py-2 w-full" required>
+                </div>
+                <!-- Add more form fields as needed -->
+    
+                <button type="submit" class="bg-purple-900 hover-bg-purple-700 text-white px-4 py-2 rounded-full text-lg font-semibold transition duration-300 ease-in-out">
+                    Buy Now
+                </button>
+            </form>
+        </div>
+    </section>
+    
+    <script src="..\javascript\game_purchase.js"></script>
+
+    <section class="bg-gray-900 py-4">
+        <div class="max-w-5xl mx-auto text-center text-black">
+            <p class="text-2xl text-red-600 mb-4">Or sign a contract with the devil for much more interesting deal.</p>
+            <a href="..\deal.html" class="block mt-4 bg-red-900 hover:bg-red-700 text-white px-4 py-2 rounded-full text-lg font-semibold transition duration-300 ease-in-out mx-auto max-w-lg text-center">I'm listening...</a>
+        </div>
+    </section>
+
+</body>
+<!-- Footer -->
+<footer class="bg-gray-800 py-8" id="Footer">
+    <div class="container mx-auto text-center">
+        <p class="text-gray-500">© 2023 Eldritch Nexus. All rights reserved.</p>
+    </div>
+</footer>
+</html>

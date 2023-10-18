@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deal with the Devil - Eldritch Nexus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white font-sans mx-auto text-center">
+
+<!-- Navigation Bar -->
+<nav class="bg-purple-900 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="index.html" class="text-3xl font-bold hover:text-red-600">Eldritch Nexus</a>
+        
+        <!-- Large Screen Navigation -->
+        <ul class="hidden space-x-6 lg:flex" id="bignav">
+            <li><a href="index.html#Games" class="text-lg font-bold hover:text-red-600">Featured Games</a></li>
+            <li><a href="deal.html" class="text-lg font-bold text-slate-400">Deal with the Devil</a></li>
+            <li><a href="library.html" class="text-lg font-bold hover:text-red-600">Game Library</a></li>
+        </ul>
+        
+        <div class="relative inline-block text-left lg:hidden">
+            <button type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-purple-900 px-3 py-2 font-semibold text-white shadow-sm text-3xl hover:text-red-600" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                ☰
+                <!--<svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>-->
+            </button>
+
+            <!-- Dropdown menu, show/hide based on menu state -->
+            <div class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1" style="display: none;">
+                <a href="index.html#Games" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Featured Games</a>
+                <a href="deal.html" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Deal with the Devil</a>
+                <a href="library.html" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Game Library</a>
+                <a href="sign_in_page.html" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Sign In</a>
+            </div>
+        </div>
+        
+        <div class="hidden flex items-center lg:flex" id="bignav">
+            <a href="sign_in_page.html" class="mr-4 text-lg font-bold hover:text-red-600">Sign In</a>
+        </div>
+    </div>
+</nav>
+
+<script>
+    const menuButton = document.getElementById("menu-button");
+    const dropdownMenu = document.querySelector('.absolute.right-0');
+
+    menuButton.addEventListener('click', () => {
+        dropdownMenu.style.display = dropdownMenu.style.display === 'none' ? 'block' : 'none';
+    });
+</script>
+
+<section class="bg-gray-800 py-4">
+    <div class="max-w-5xl mx-auto text-lg">
+        <p class="text-5xl text-red-600">Deal With The Devil</p>
+    </div>
+    <img src="images/logo/devil_deal.png" class="rounded-2xl shadow-lg mx-auto max-w-lg m-4 w-full rounded-lg shadow-lg">
+    <div class="max-w-5xl mx-auto text-lg">
+        <p class="text-2xl text-red-600">Unleash the Power of Gaming</p>
+        <p>At Eldritch Nexus, we believe in making gaming an otherworldly experience. Our unique and value-packed offer is designed to provide incredible gaming experiences for our customers, giving you access to a world of gaming opportunities like never before.</p>
+        <p>For just £10.99 a month, you can embrace a gaming experience that transcends the ordinary. Our deal grants you access to a vast collection of games, bringing you the most immersive and captivating gaming adventures, all in one place.</p>
+        <br>
+        <p class="text-2xl text-red-600">What Awaits You</p>
+        <p>Imagine having a world of gaming at your fingertips. Eldritch Nexus opens the gateway to a vast library of games, where you can explore different realms, conquer epic quests, and discover your inner gaming enthusiast. Whether you're an experienced gamer or new to the scene, our subscription service is designed to cater to your every need.</p>
+        <br>
+        <p class="text-2xl text-red-600">Why Choose Eldritch Nexus?</p>
+        <p>Unmatched Value: For the price of a mere £10.99 per month, you get access to a myriad of games that would otherwise cost a fortune. We've made it our mission to provide incredible value to our customers, ensuring you have a treasure trove of gaming experiences within easy reach.</p>
+        <p>Diverse Library: Our extensive collection of games covers a wide spectrum of genres. From heart-pounding action adventures to mind-bending puzzles, and from immersive RPGs to intense multiplayer battles, we have it all. Eldritch Nexus caters to every gaming preference.</p>
+        <p>Constant Updates: We understand that your gaming appetite is insatiable. That's why we regularly update our library with the latest and greatest titles, ensuring you're always on the cutting edge of gaming experiences. You'll never miss out on the next big thing in the gaming world.</p>
+        <p>User-Friendly: Our platform is designed with you in mind. Navigating through our library is easy and intuitive. You can effortlessly discover, download, and dive into your favorite games, with no technical wizardry required.</p>
+        <br>
+        <p class="text-2xl text-red-600">Start Your Journey Today</p>
+        <p>The Game Deals for Everyone isn't an opportunity to be missed; it's your ticket to a gaming paradise. Join Eldritch Nexus today and step into a world where gaming knows no bounds. Get ready to explore, conquer, and immerse yourself in the fantastic universes of gaming.</p>
+        <p>Your incredible gaming journey begins at just £10.99 a month. Don't miss out on this fantastic offer. Sign up now and unleash the power of gaming with Eldritch Nexus!</p>
+    </div>
+</section>
+
+<section class="bg-gray-900 py-4">
+    <div class="max-w-5xl mx-auto text-center text-black">
+        <p class="text-2xl text-red-600 mb-4">Ready to Join Us?</p>
+        <p class="mb-6 text-white">Sign The Contract and start your gaming adventure now!</p>
+        <form action="#" method="POST">
+            <!-- Include your form fields here, e.g., name, email, etc. -->
+            <div class="mb-4">
+                <label for="email" class="block text-red-600 text-xl">Email:</label>
+                <input type="email" id="email" name="email" class="rounded-lg px-3 py-2 w-full" required>
+            </div>
+            <!-- Add more form fields as needed -->
+
+            <button type="submit" class="bg-red-900 hover-bg-red-700 text-white px-4 py-2 rounded-full text-lg font-semibold transition duration-300 ease-in-out">
+                Sign The Contract
+            </button>
+        </form>
+    </div>
+</section>
+
+<script src="javascript\form_proccessor.js"></script>
+
+</body>
+<!-- Footer -->
+<footer class="bg-gray-800 py-8" id="Footer">
+    <div class="container mx-auto text-center">
+        <p class="text-gray-500">© 2023 Eldritch Nexus. All rights reserved.</p>
+    </div>
+</footer>
+</html>

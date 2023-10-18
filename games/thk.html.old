@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eldritch Nexus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white font-sans mx-auto text-center">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-purple-900 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="..\index.html" class="text-2xl font-bold">Eldritch Nexus</a>
+            <ul class="flex space-x-6">
+                <li><a href="#" class="hover:text-gray-300">Games</a></li>
+                <li><a href="#" class="hover:text-gray-300">Music</a></li>
+                <li><a href="#" class="hover:text-gray-300">Legal</a></li>
+            </ul>
+            <div class="flex items-center">
+                <a href="#" class="mr-4 hover:text-gray-300">Sign In</a>  
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-gray-800 p-4">
+        <h3 class="text-3xl font-semibold mb-2">Hollow knight</h3>
+        <p class="text-gray-300">Team Cherry</p>
+    </div>
+
+    <div class="flex flex-col sm:flex-row sm:space-x-0 md:space-x-0 p-4">
+    <div class="w-full sm:w-1/4 md:w-full lg:w-full"></div> <!-- Blank space on the left, stack on small to large screens -->
+    <div class="w-full sm:w-1/2 sm:flex sm:justify-center sm:items-center">
+        <img src="..\images\HollowKnight\banner.jpg" class="max-w-full h-96 mx-auto">
+    </div> <!-- Banner, centered on small to large screens -->
+    <div class="w-full sm:w-1/2 sm:flex sm:flex-col sm:justify-center">
+        <div class="mb-4 mx-auto">
+            <img class="mySlides fade max-w-full max-h-96 mx-auto" src="..\images\HollowKnight\slide1.jpg">
+            <img class="mySlides fade max-w-full max-h-96 mx-auto" src="..\images\HollowKnight\slide2.jpg">
+            <img class="mySlides fade max-w-full max-h-96 mx-auto" src="..\images\HollowKnight\slide3.jpg">
+            <img class="mySlides fade max-w-full max-h-96 mx-auto" src="..\images\HollowKnight\slide4.jpg">
+            <img class="mySlides fade max-w-full max-h-96 mx-auto" src="..\images\HollowKnight\slide5.jpg">
+        </div>
+        <div class="max-w-md mx-auto text-center"> <!-- Limit text width to the width of the slide and center text -->
+            <p class="space-y-4">Forge your own path in Hollow Knight! An epic action adventure through a vast ruined kingdom of insects and heroes. Explore twisting caverns, battle tainted creatures and befriend bizarre bugs, all in a classic, hand-drawn 2D style.</p>
+        </div>
+    </div> <!-- Slides and text, centered on small to large screens -->
+    <div class="w-full sm:w-1/4 md:w-full lg:w-full"></div> <!-- Blank space on the right, stack on small to large screens -->
+</div>
+
+    
+    
+    
+    <script src="..\javascript\slideshow.js"></script>
+    
+    <div class="bg-gray-800">
+        <img src="..\images\HollowKnight\godmaster.png" class="w-auto h-48 mx-auto p-4">
+        <p class="text-gray-300">Godmaster - Take your place amongst the Gods. New Characters and Quest. New Boss Fights. Available Now!</p>
+        <img src="..\images\HollowKnight\lifeblood.png" class="w-auto h-48 mx-auto p-4">
+        <p class="text-gray-300">Lifeblood - A Kingdom Upgraded! New Boss. Upgraded Bosses. Tweaks and Refinements across the whole game.</p>
+        <img src="..\images\HollowKnight\grimm.png" class="w-auto h-48 mx-auto p-4">
+        <p class="text-gray-300">The Grimm Troupe - Light the Nightmare Lantern. Summon the Troupe. New Major Quest. New Boss Fights. New Charms. New Enemies. New Friends.</p>
+        <img src="..\images\HollowKnight\hidden_dreams.png" class="w-auto h-48 mx-auto p-4">
+        <p class="text-gray-300">Hidden Dreams - Mighty new foes emerge! New Boss fights. New Upgrades. New Music.</p>
+    </div>
+    
+</body>
+<!-- Footer -->
+<footer class="bg-gray-800 py-8" id="Footer">
+    <div class="container mx-auto text-center">
+        <p class="text-gray-500">© 2023 Eldritch Nexus. All rights reserved.</p>
+    </div>
+</footer>
+</html>

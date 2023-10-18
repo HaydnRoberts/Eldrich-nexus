@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark souls - Eldritch Nexus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white font-sans mx-auto text-center">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-purple-900 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="..\index.html" class="text-3xl font-bold hover:text-red-600">Eldritch Nexus</a>
+            
+            <!-- Large Screen Navigation -->
+            <ul class="hidden space-x-6 lg:flex" id="bignav">
+                <li><a href="..\index.html#Games" class="text-lg font-bold hover:text-red-600">Featured Games</a></li>
+                    <li><a href="..\deal.html" class="text-lg font-bold hover:text-red-600">Deal with the Devil</a></li>
+                    <li><a href="..\index.html#" class="text-lg font-bold hover:text-red-600">Game Library</a></li>
+            </ul>
+            
+            <div class="relative inline-block text-left lg:hidden">
+                <button type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-purple-900 px-3 py-2 font-semibold text-white shadow-sm text-3xl hover:text-red-600" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                    ☰
+                    <!--<svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                    </svg>-->
+                </button>
+
+                <!-- Dropdown menu, show/hide based on menu state -->
+                <div class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1" style="display: none;">
+                    <a href="..\index.html#Games" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Featured Games</a>
+                    <a href="..\deal.html" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Deal with the Devil</a>
+                    <a href="..\index.html#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Game Library</a>
+                    <a href="..\sign_in_page.html" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Sign In</a>
+                </div>
+            </div>
+            
+            <div class="hidden flex items-center lg:flex" id="bignav">
+                <a href="..\sign_in_page.html" class="mr-4 text-lg font-bold hover:text-red-600">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        const menuButton = document.getElementById("menu-button");
+        const dropdownMenu = document.querySelector('.absolute.right-0');
+
+        menuButton.addEventListener('click', () => {
+            dropdownMenu.style.display = dropdownMenu.style.display === 'none' ? 'block' : 'none';
+        });
+    </script>
+
+    <section class="bg-gray-800 p-4 items-center mx-auto">
+        <div class="container mx-auto flex flex-col md:flex-row items-center"> <!-- Added 'items-center' class -->
+            <div class="w-1/2 sm:w-1/4 md:w-1/2 lg:w-1/2"></div> <!-- Blank space on the left, stack on small to large screens -->
+            <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 p-4">
+                <img src="..\images\DarkSouls\banner.jpg" class="w-full rounded-lg shadow-lg">
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 p-4 md:pl-4">
+                <h1 class="text-3xl font-semibold mb-2 max-w-lg">Dark Souls Remastered</h1>
+                <p class="text-gray-300 max-w-lg">FromSoftware</p>
+                <p class="mt-4 text-gray-300 max-w-lg">Then, there was fire. Re-experience the critically acclaimed, genre-defining game that started it all. Beautifully remastered, return to Lordran in stunning high-definition detail running at 60fps.</p>
+            </div>
+            <div class="w-1/2 sm:w-1/4 md:w-1/2 lg:w-1/2"></div> <!-- Blank space on the right, stack on small to large screens -->
+        </div>
+    </section>
+    
+    
+    
+    <div class="flex flex-col sm:flex-row sm:space-x-0 md:space-x-0 p-4">
+        <div class="w-1/2 sm:w-1/4 md:w-1/2 lg:w-1/2"></div> <!-- Blank space on the left, stack on small to large screens -->
+        <div class="w-full flex justify-center items-center">
+            <div class="mx-auto">
+                <img class="mySlides fade w-full rounded-lg shadow-lg " src="..\images\DarkSouls\slide1.jpg">
+                <img class="mySlides fade w-full rounded-lg shadow-lg " src="..\images\DarkSouls\slide2.jpg">
+                <img class="mySlides fade w-full rounded-lg shadow-lg " src="..\images\DarkSouls\slide3.jpg">
+                <img class="mySlides fade w-full rounded-lg shadow-lg " src="..\images\DarkSouls\slide4.jpg">
+                <img class="mySlides fade w-full rounded-lg shadow-lg " src="..\images\DarkSouls\slide5.jpg">
+            </div>
+        </div>
+        <div class="w-1/2 sm:w-1/4 md:w-1/2 lg:w-1/2"></div> <!-- Blank space on the right, stack on small to large screens -->
+    </div>
+
+
+    <script src="..\javascript\slideshow.js"></script>
+
+    <div class="bg-gray-800">
+        <div class="w-1/2 sm:w-1/4 md:w-1/2 lg:w-1/2"></div> <!-- Blank space on the left, stack on small to large screens -->
+        <div class="mx-auto items-center">
+            <p class="max-w-xl mx-auto items-center">Then, there was fire. Re-experience the critically acclaimed, genre-defining game that started it all. Beautifully remastered, return to Lordran in stunning high-definition detail running at 60fps.
+                Dark Souls Remastered includes the main game plus the Artorias of the Abyss DLC.</p>
+            
+            <p>Key features:</p>
+            <p> • Deep and Dark Universe</p>
+            <p> • Each End is a New Beginning</p>
+            <p> • Gameplay Richness and Possibilities</p>
+            <p> • Sense of Learning, Mastering and Accomplishment</p>
+            <p> • The Way of the Multiplayer (up to 6 players with dedicated servers)</p>
+        </div>
+        <div class="w-1/2 sm:w-1/4 md:w-1/2 lg:w-1/2"></div> <!-- Blank space on the right, stack on small to large screens -->
+    </div>
+
+    <section class="bg-gray-900 py-4">
+        <div class="max-w-5xl mx-auto text-center text-black">
+            <p class="text-2xl text-purple-700 mb-4">Buy Dark Souls Remastered</p>
+            <p class="mb-6 text-white text-2xl">£34.99</p>
+            <form action="#" method="POST">
+                <!-- Include your form fields here, e.g., name, email, etc. -->
+                <div class="mb-4">
+                    <label for="email" class="block text-purple-700 text-2xl">Email:</label>
+                    <input type="email" id="email" name="email" class="rounded-lg px-3 py-2 w-full" required>
+                </div>
+                <!-- Add more form fields as needed -->
+    
+                <button type="submit" class="bg-purple-900 hover-bg-purple-700 text-white px-4 py-2 rounded-full text-lg font-semibold transition duration-300 ease-in-out">
+                    Buy Now
+                </button>
+            </form>
+        </div>
+    </section>
+    
+    <script src="..\javascript\game_purchase.js"></script>
+
+    <section class="bg-gray-900 py-4">
+        <div class="max-w-5xl mx-auto text-center text-black">
+            <p class="text-2xl text-red-600 mb-4">Or sign a contract with the devil for much more interesting deal.</p>
+            <a href="..\deal.html" class="block mt-4 bg-red-900 hover:bg-red-700 text-white px-4 py-2 rounded-full text-lg font-semibold transition duration-300 ease-in-out mx-auto max-w-lg text-center">I'm listening...</a>
+        </div>
+    </section>
+
+</body>
+<!-- Footer -->
+<footer class="bg-gray-800 py-8" id="Footer">
+    <div class="container mx-auto text-center">
+        <p class="text-gray-500">© 2023 Eldritch Nexus. All rights reserved.</p>
+    </div>
+</footer>
+</html>
